@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}

@@ -1,0 +1,87 @@
+.currency {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 8px;
+    height: 42px;
+    background: #FAFAFA;
+    border: 1px solid #D4D4D4;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+    text-align: left;
+    transition: background 0.25s;
+}
+
+.currency:focus {
+    outline: none;
+    background: #F5F5F5;
+}
+
+.currency.selectedCurrency {
+    background: #F5F5F5;
+    position: relative;
+    animation: .5s fadeInBg;
+}
+
+.selectedCurrency::after {
+    content: url('../../assets/icons/material-symbols_check-rounded.svg');
+    position: absolute;
+    right: 8px;
+    animation: .5s fadeIn;
+}
+
+.symbol {
+    background: #EFF6FF;
+    border-radius: 30px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1447E6;
+    border: 1px solid #BEDBFF;
+    font-size: 12px;
+}
+
+.symbolLong {
+    font-size: 9px;
+}
+
+.names {
+    overflow: hidden;
+}
+
+.code {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 0 2px 0;
+    color: #0A0A0A;
+}
+
+.name {
+    margin: 0;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: pre;
+    color: #737373;
+}
+
+@keyframes fadeInBg {
+    from {
+        background: 0;
+    }
+    to {
+        background: #F5F5F5;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

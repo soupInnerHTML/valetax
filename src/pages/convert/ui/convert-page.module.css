@@ -1,0 +1,36 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.title {
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+    color: #0A0A0A;
+    margin: 0;
+    letter-spacing: 1.2px;
+}
+.subtitle {
+    font-weight: 500;
+    font-size: 14px;
+    color: #737373;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.convert {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    margin-top: 30px;
+    align-items: flex-start;
+}
+
+@media screen and (max-width: 767px){
+    .convert {
+        flex-direction: column;
+    }
+}

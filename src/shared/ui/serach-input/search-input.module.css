@@ -1,0 +1,22 @@
+.searchInputContainer {
+    position: relative;
+}
+.searchInputContainer::before {
+    content: url("../../assets/icons/search-icon.svg");
+    position: absolute;
+    left: 16px;
+    top: 8px;
+}
+.searchInput {
+    width: 100%;
+    height: 34px;
+    border-radius: 8px;
+    transition: .25s;
+    padding-left: 38px;
+    margin-bottom: 4px;
+    border: 1px solid #D4D4D4
+}
+.searchInput:focus {
+    outline: 3px solid #DBEAFE;
+    border: 1px solid #51A2FF;
+}

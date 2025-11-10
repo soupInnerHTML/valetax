@@ -1,0 +1,3 @@
+export const MIN_CONVERTER_VALUE = 0.01;
+export const MAX_CONVERTER_VALUE = 100_000_000_000_000;
+export const AMOUNT_DEBOUNCE_TIMEOUT = 250;

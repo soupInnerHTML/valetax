@@ -1,0 +1,71 @@
+.conversionResult {
+    border: 1px solid #D4D4D4;
+    padding: 20px;
+    width: 34.28%;
+    border-radius: 16px;
+}
+.title {
+    font-size: 18px;
+    font-weight: 600;
+}
+.price {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 24px;
+    line-height: 29px;
+}
+.priceSkeleton {
+    display: flex;
+    justify-content: center;
+}
+.amount {
+    font-weight: 500;
+    font-size: 12px;
+    color: #737373;
+    text-align: center;
+    margin-top: 4px;
+}
+
+.hr {
+    margin: 24px 0;
+    border: 1px solid #E5E5E5;
+}
+
+.key {
+    font-weight: 600;
+    font-size: 12px;
+    color: #737373;
+}
+
+.value {
+    font-weight: 600;
+    font-size: 12px;
+    color: #0A0A0A;
+    margin-left: auto;
+    text-align: end;
+    line-height: 15px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    height: 15px;
+    align-items: center;
+}
+
+.info {
+    font-size: 12px;
+    color: #737373;
+    text-align: center;
+    padding: 8px 12px;
+    background: #FAFAFA;
+    border-radius: 12px;
+}
+
+@media screen and (max-width: 767px){
+    .conversionResult {
+        width: 100%;
+    }
+}

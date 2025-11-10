@@ -1,0 +1,48 @@
+.convertForm {
+    width: 62.65%;
+    padding: 20px;
+    border: 1px solid #D4D4D4;
+    border-radius: 16px;
+}
+
+.currencies {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.currency {
+    width: 44.25%;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.switch {
+    background: url("../assets/icons/switch.svg");
+    width: 42px;
+    height: 42px;
+    border: 0;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px){
+    .convertForm {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .currencies {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+    .currency {
+        width: 100%;
+    }
+}

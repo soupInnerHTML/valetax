@@ -1,0 +1,28 @@
+.refreshRates {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: #EFF6FF;
+    border: 1px solid #BEDBFF;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    color: #1447E6;
+    cursor: pointer;
+    transition: transform 0.2s;
+    height: 23px;
+}
+
+.refreshRates:hover {
+    transform: scale(1.05);
+}
+
+.refreshRates:active {
+    transform: scale(.95);
+}
+
+.refreshRates img {
+    width: 12px;
+    height: 12px;
+}

@@ -1,0 +1,82 @@
+.selectCurrencyModal {
+    width: 410px;
+    height: 410px;
+    margin: auto;
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 16px;
+    box-sizing: content-box;
+    outline: none;
+}
+.selectCurrencyModalOverlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    animation: .5s fadeIn;
+}
+.selectCurrencyModalContent, .selectCurrencyModalCurrencies {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.selectCurrencyModalCurrencies {
+    overflow: auto;
+}
+.selectCurrencyModalOverlayBeforeClose {
+    animation: .5s fadeOut;
+}
+.title {
+    font-weight: 600;
+    font-size: 16px;
+    color: #0A0A0A;
+    margin-bottom: 4px;
+    margin-top: 0;
+}
+.subtitle {
+    font-weight: 500;
+    font-size: 14px;
+    color: #737373;
+    margin-bottom: 4px;
+}
+.close {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 0;
+    top: 0;
+    background: url("../assets/icons/x-mark-icon.svg");
+    border: 0;
+    cursor: pointer;
+}
+.selectCurrencyModal .currency {
+    padding: 12px 8px;
+    box-sizing: content-box;
+    border: 0;
+    background: 0;
+    width: calc(100% - 16px);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,18 @@
+.title {
+    font-weight: 600;
+    font-size: 12px;
+    color: #0A0A0A;
+    margin-bottom: 8px;
+}
+
+.input {
+    width: 100%;
+    height: 41px;
+    border-radius: 8px;
+    border: 1px solid #D4D4D4;
+    background: #FAFAFA;
+    text-align: center;
+    outline: none;
+    color: #0A0A0A;
+    font-size: 14px;
+}
